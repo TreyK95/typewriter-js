@@ -9,10 +9,10 @@ let j = 0;
 let currentPhrase = [];
 
 function loop() {
-  textDisplay.innerHTML = currentPhrase;
+  textDisplay.innerHTML = currentPhrase.join("");
   if (i < phrases.length) {
     if (j <= phrases[i].length) {
-      currentPhrase.push(phrase[i][j]);
+      currentPhrase.push(phrases[i][j]);
       j++;
     }
 
